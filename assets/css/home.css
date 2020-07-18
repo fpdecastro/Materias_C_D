@@ -23,6 +23,7 @@ h4 {
 .show-colors{
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 .show-colors-regular{
     display: flex;
@@ -115,4 +116,56 @@ h4 {
 @keyframes transition{
     from {font-size: 15px;}
     to {font-size: 20px;}
+}
+
+@media (max-width: 414px){
+    .ano-total{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .header{
+        width: 80%;
+    }
+    .show-colors{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .color-regular{
+        background-color: #00909e;
+        width: 50px;
+        border-radius: 50%;
+        margin: 10px 20px 10px 20px;
+    
+    }
+    .color-aprobado{
+        background-color: #0f4c75;
+        width: 50px;
+        border-radius: 50%;
+        margin: 10px 20px 10px 20px;
+    }
+    .header-title{
+        margin: 20px auto;
+        font-size: 25px;
+    }
+    .header-subtitle{
+        margin: 20px auto;
+        font-size: 20px;
+    }
+    .semestre{
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+    }
+    .semestre-materia{
+        width: calc(100%/3);
+    }
+    .spacer{
+        width: 100%;
+        height: 30px;
+    }
 }
