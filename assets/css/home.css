@@ -118,7 +118,7 @@ h4 {
     to {font-size: 20px;}
 }
 
-@media (max-width: 414px){
+@media (max-width: 312px){
     .ano-total{
         display: flex;
         flex-direction: column;
@@ -167,5 +167,11 @@ h4 {
     .spacer{
         width: 100%;
         height: 30px;
+    }
+    .aprobado{
+        font-size: 15px;
+    }
+    .regular{
+        font-size: 15px;
     }
 }
